@@ -91,6 +91,10 @@ async def run_queries_parallel(questions: List[str], retriever):
         return await asyncio.gather(*tasks)
 
 # ------------------ Endpoint ------------------
+@app.get("/")
+async def home():
+    return {"message": "FastAPI RAG Engine is running!"}
+    
 @app.post("/api/v1/hackrx/run", response_model=QueryResponse)
 async def run_query(req: QueryRequest):
     file_path = download_file(req.documents)
