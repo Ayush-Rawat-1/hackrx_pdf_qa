@@ -1,0 +1,17 @@
+langchain
+langchain-community
+ipykernel
+python-dotenv
+pypdf
+arxiv
+pymupdf
+bs4
+langchain-text-splitters
+sentence_transformers
+langchain-huggingface
+langchain-chroma
+faiss-cpu
+fastapi
+langserve
+langchain-groq
+fastapi[standard]
