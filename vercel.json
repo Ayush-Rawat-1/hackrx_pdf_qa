@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "parallel.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "parallel.py"
+    }
+  ]
+}
